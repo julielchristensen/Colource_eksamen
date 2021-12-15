@@ -1,0 +1,132 @@
+Overordnet css html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --background-color: #f4f0ef;
+  --button-color: #eaf3d8;
+  --button-text: #0f343e;
+  --subheader: Montserrat;
+  --body-text: Montserrat;
+  --button-font: Montserrat;
+  --main-text-color: #0f343e;
+  --hover: #f4f0ef;
+}
+
+header {
+  background-color: var(--button-text);
+  padding: 10px;
+}
+
+.logo {
+  max-width: 13%;
+  margin-left: 20px;
+}
+
+img {
+  max-width: 80%;
+}
+
+.info {
+  max-width: 30%;
+}
+
+.form {
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  border: 0;
+  font-family: var(--body-text);
+}
+
+h1 {
+  font-family: "Archivo Black";
+  color: var(--main-text-color);
+}
+
+h2 {
+  font-family: var(--subheader);
+  color: var(--main-text-color);
+}
+
+h3,
+h4 {
+  color: var(--main-text-color);
+}
+
+p {
+  font-family: var(--body-text);
+  line-height: 1.7rem;
+}
+
+/*Button*/
+.btn {
+  padding: 1rem;
+  border-radius: 40px;
+  background: var(--button-color);
+  text-align: center;
+  text-decoration: none;
+  font: bold 1.25em/1 var(--button-font);
+  letter-spacing: 1px;
+  color: var(--button-text);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 2px 3px 8px 0px lightgrey;
+}
+
+/* button a {
+  text-decoration: none;
+  font: bold 1.25em/1 var(--button-text);
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+} */
+
+.btn:hover {
+  outline: 0;
+  border-radius: 40px;
+  background: var(--button-text);
+  color: var(--hover);
+}
+
+#section_1 {
+  margin-bottom: 0rem;
+}
+
+#section_2 {
+  background-color: var(--background-color);
+  padding: 20px 0 40px 0px;
+}
+
+.sec_2_tekst {
+  padding: 10px 50px 10px 50px;
+}
+
+#section_3 {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    max-width: 50%;
+    margin: 0px 64px 0 79px;
+  }
+
+  #section_1 {
+    margin-bottom: 0;
+  }
+
+  .infografik {
+    margin-bottom: 3rem;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
